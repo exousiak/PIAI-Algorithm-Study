@@ -21,9 +21,4 @@
 
 ## 파일 및 폴더 구조
 
-- yk/week{n}/문제명.py
-- sj/week{n}/문제명.py
-- jw/week{n}/문제명.py
-- dh/week{n}/문제명.py
-- cy/week{n}/문제명.py
-- mh/week{n}/문제명.py
+- name/week(n)/문제명.py
