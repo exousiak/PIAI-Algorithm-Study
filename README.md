@@ -25,3 +25,5 @@
 - sj/week(n)/문제명.py
 - cy/week(n)/문제명.py
 - mh/week(n)/문제명.py
+- dh/week(n)/문제명.py
+- jw/week(n)/문제명.py
