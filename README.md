@@ -21,10 +21,14 @@
 
 ## 파일 및 폴더 구조
 
+```tex
 📦 PIAI-Algorithm-Study
  ├── README.md
  ├── 📁 yk
  │    ├── 📁 week1
+           ├── 📄 Q1.py
+           ├── 📄 Q2.py
+           ├── 📄 Q3.py
  │    └── 📁 week2
  └── 📁 cy
  └── 📁 mh
