@@ -8,19 +8,20 @@
 
 def solution(players, callings):
     dic = {}
-    # player idx 설정
-    for i in range(len(players)):
-        dic[players[i]]=i
     
-    for i in range(len(callings)):
-        # 호명된 선수의 idx
-        idx = dic[callings[i]]
-        
+    for i, name in enumerate(players):
+        dic[name] = i
+    # 결과 : {'mumu': 0, 'soe': 1, 'poe': 2, 'kai': 3, 'mine': 4}
+    
+    for i in callings:
+        idx = dic[i]
+        ## prev_player: 딕셔너리인 dic에서의 idx 변환 위해 필요함
         prev_player = players[idx-1]
+        ## 실제 위치 변환
         players[idx-1], players[idx] = players[idx], prev_player
 
-        # 교환된 플레이어의 위치 정보를 업데이트합니다.
-        dic[callings[i]], dic[prev_player] = idx-1, idx
+        ## 위치 변환 후, 딕셔너리에서 idx 변환
+        dic[i], dic[prev_player] = idx-1, idx
 
         
     return players
